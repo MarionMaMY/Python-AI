@@ -1,6 +1,6 @@
 print('hello world')
 print('hello world 2')
-print('Hello world'+'Hello Hong Kong')
+print('Hello world'+' Hello Hong Kong')
 print(1+1)
 print(3-1)
 print(3*4)
@@ -11,23 +11,23 @@ print(int('2')+3)  # int 定义为整数型
 print(int(1.9))  # 当 int 一个浮点型数时，int 会保留整数部分
 print(float('1.2')+3)  # float（）是浮点型，可以把字符串转换成小数
 
-# python 可以直接运算，也可以用 print（） 打印出来
+# python 可以直接运算，也可以用 print（）打印出来
 
-print(3**2) # **2表示2次方
-print(3**3) # **3表示3次方
-print(3**4) # **4表示4次方
+print(3**2)  # **2表示2次方
+print(3**3)  # **3表示3次方
+print(3**4)  # **4表示4次方
 
 
-print(8%3) # 余数符号为%，返回的值是相除后的余数
+print(8 % 3)  # 余数符号为%，返回的值是相除后的余数
 
 apple = 1
 print(apple)
 
-apple = 'iphone 7 plus' # 赋值字符串
+apple = 'iphone 7 plus'  # 赋值字符串
 print(apple)
 
-a,b,c = 11,12,13 # 一次定义多个变量
-print(a,b,c)
+a, b, c = 11, 12, 13  # 一次定义多个变量
+print(a, b, c)
 
 condition = 0
 while condition < 10:
@@ -46,12 +46,11 @@ while a:
     a = a[:len(a)-1]
 
 
-example_list = [1,2,3,4,5,6,7,12,543,876,12,3,2,5]
-
+example_list = [1, 2, 3, 4, 5, 6, 7, 12, 543, 876, 12, 3, 2, 5]
 for i in example_list:
     print(i)
 
-example_list = [1,2,3,4,5,6,7,12,543,876,12,3,2,5]
+example_list = [1, 2, 3, 4, 5, 6, 7, 12, 543, 876, 12, 3, 2, 5]
 for i in example_list:
     print(i)
     print('inner of for')
@@ -71,15 +70,14 @@ dic['platform'] = 64
 for key in dic:
     print(key, dic[key])
 
-s = set(['python','python2','python3','python'])
-
+s = set(['python', 'python2', 'python3', 'python'])
 for item in s:
     print(item)
 
 # define a Fib class
 class Fib(object):
     def __init__(self, max):
-        self.max = max
+        self.max =max
         self.n, self.a, self.b = 0, 0, 1
 
     def __iter__(self):
@@ -107,7 +105,6 @@ def fib(max):
 # using generator
 for i in fib(5):
     print(i)
-
 
 
 
